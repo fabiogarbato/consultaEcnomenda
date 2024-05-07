@@ -1,0 +1,72 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;  
+}
+
+::-webkit-scrollbar-track {
+  background: #abd7f5;  
+}
+
+::-webkit-scrollbar-thumb {
+  background: #029c02;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #006400;  
+}
+
+::selection {
+  background-color:#ff9900;
+  color: black; 
+}
+
+.main-content {
+  padding-bottom: 100vh;
+  overflow-y: auto; 
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #ffd700;
+  color: black;
+  padding: 10px 0;
+}
+
+.custom-logout-link:hover, .custom-logout-link:focus {
+  color: rgb(255, 38, 0) !important;
+  background-color: rgb(156, 224, 255) !important; 
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Fira Sans Condensed'), 
+       url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@900&display=swap') format('truetype');
+}
+
+.fira-sans-condensed-black {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 700;
+}
+
+
+
+
+
