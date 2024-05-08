@@ -7,7 +7,7 @@ import axios from 'axios';
 import Footer from '../Components/Footer'
 import NavBar from '../Components/Navbar'
 import {showMessageError, showMessageSuccess} from '../utils'
-import { FaTruck, FaMapMarkedAlt, FaRegCalendarAlt, FaInfoCircle } from 'react-icons/fa';
+import { FaTruck, FaMapMarkedAlt, FaRegCalendarAlt, FaInfoCircle, FaFilePdf } from 'react-icons/fa';
 import { jsPDF } from 'jspdf';
 
 const DHLConsulta = () => {
@@ -112,7 +112,17 @@ const DHLConsulta = () => {
           {shipmentDetails && (
             <Row className="mt-4">
               <Col md={8} className="mx-auto">
-              <Button variant="secondary" onClick={generatePdf}>Gerar PDF</Button>
+              <Button 
+                variant="secondary" 
+                onClick={generatePdf}
+                style={{
+                  backgroundColor: '#e74c3c', 
+                  borderColor: '#c0392b',
+                  color: 'white'
+                }}
+              >
+                <FaFilePdf color="#fff" style={{ marginRight: 5 }} /> Gerar PDF
+              </Button>
                 <Card className="shadow">
                   <Card.Header className="bg-primary text-white"><FaTruck /> Detalhes da Encomenda</Card.Header>
                   <ListGroup variant="flush">
