@@ -16,15 +16,15 @@ html, body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #abd7f5;  
+  background: #fff78b;  
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #029c02;
+  background: #ffbb00;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #006400;  
+  background: #c9ab00;  
 }
 
 ::selection {

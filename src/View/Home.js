@@ -31,7 +31,7 @@ const App = () => {
           {images.map((image, idx) => (
             <Col md={4} key={idx}>
               <Link to={links[idx]} className="card-link">
-                <Card className="shadow-sm">
+                <Card className="shadow-sm custom-card">
                   <Card.Img variant="top" src={image} />
                   <Card.Body>
                     <Card.Title style={{textAlign:'center'}}>{titles[idx]}</Card.Title>

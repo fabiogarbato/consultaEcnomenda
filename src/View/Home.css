@@ -1,9 +1,9 @@
-.card:hover {
+.custom-card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     cursor: pointer;
-  }
+}
 
 .card-link {
     text-decoration: none; 
@@ -13,5 +13,3 @@
 .card-link:hover {
     text-decoration: none; 
 }
-
-  
